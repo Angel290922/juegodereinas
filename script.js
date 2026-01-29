@@ -15,7 +15,7 @@ let tiempoLimite=180;
 let mejorTiempo=localStorage.getItem("record")||null;
 
 
-/* INICIO */
+
 
 window.onload=()=>{
 
@@ -34,7 +34,7 @@ window.onload=()=>{
 };
 
 
-/* TUTORIAL */
+
 
 function mostrarTutorial(){
 
@@ -52,7 +52,7 @@ function cerrarTutorial(){
 }
 
 
-/* INIT */
+
 
 function init(){
 
@@ -101,7 +101,7 @@ function init(){
 }
 
 
-/* TIMER */
+
 
 function updateTime(){
 
@@ -127,7 +127,6 @@ function updateTime(){
 }
 
 
-/* AYUDAS */
 
 function resetAyudas(){
 
@@ -147,7 +146,6 @@ function resetAyudas(){
 }
 
 
-/* CLICK */
 
 function clickUser(r,c){
 
@@ -183,7 +181,7 @@ function clickUser(r,c){
 }
 
 
-/* RENDER */
+
 
 function render(){
 
@@ -208,7 +206,6 @@ function render(){
 }
 
 
-/* CONTAR */
 
 function contar(){
 
@@ -216,7 +213,6 @@ function contar(){
 }
 
 
-/* VALIDAR */
 
 function esSeguro(board,r,c){
 
@@ -235,8 +231,6 @@ function esSeguro(board,r,c){
     return true;
 }
 
-
-/* BACKTRACKING */
 
 function resolver(board,row){
 
@@ -263,7 +257,7 @@ function resolver(board,row){
 }
 
 
-/* AYUDAS */
+
 
 function sugerencia(){
 
@@ -303,7 +297,7 @@ function resolverCompleto(){
 }
 
 
-/* VERIFICAR */
+
 
 function verificar(){
 
@@ -314,7 +308,7 @@ function verificar(){
 }
 
 
-/* GANAR */
+
 
 function ganar(){
 
@@ -332,7 +326,7 @@ function ganar(){
 
         guardarRecord(tiempo);
 
-        N++; // subir nivel
+        N++; // 
 
         sizeInput.value=N;
     }
@@ -358,7 +352,7 @@ function ganar(){
 }
 
 
-/* PERDER */
+
 
 function perder(){
 
@@ -373,7 +367,7 @@ function perder(){
 }
 
 
-/* FINAL */
+
 
 function cerrarFinal(){
 
@@ -385,7 +379,7 @@ function cerrarFinal(){
 }
 
 
-/* RANKING */
+
 
 function guardarRecord(t){
 
@@ -407,7 +401,7 @@ function mostrarRanking(){
 }
 
 
-/* MODO TIEMPO */
+
 
 function modoTiempo(){
 
@@ -420,7 +414,7 @@ function modoTiempo(){
 }
 
 
-/* CONFETI */
+
 
 const canvas=document.getElementById("confetti");
 const ctx=canvas.getContext("2d");
@@ -496,7 +490,6 @@ function detenerConfeti(){
 }
 
 
-/* EXTRAS */
 
 function error(r,c){
 
@@ -531,4 +524,5 @@ function cambiarTamano(){
     N=v;
 
     reiniciar();
+
 }
