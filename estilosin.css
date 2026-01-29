@@ -1,4 +1,4 @@
-/* RESET */
+
 
 *{
     box-sizing:border-box;
@@ -7,7 +7,7 @@
 }
 
 
-/* BODY */
+
 
 body{
 
@@ -29,7 +29,6 @@ body{
 }
 
 
-/* CONTENEDOR */
 
 .container{
 
@@ -55,7 +54,7 @@ body{
 
 
 
-/* TITULO */
+
 
 h1{
 
@@ -71,7 +70,6 @@ h1{
 }
 
 
-/* PANEL */
 
 .panel{
 
@@ -108,7 +106,7 @@ h1{
 }
 
 
-/* TABLERO */
+
 
 .board{
 
@@ -126,7 +124,7 @@ h1{
 }
 
 
-/* CASILLAS */
+
 
 .square{
 
@@ -153,7 +151,7 @@ h1{
 }
 
 
-/* COLORES TABLERO */
+
 
 .white{
 
@@ -169,7 +167,6 @@ h1{
 }
 
 
-/* ESTADOS */
 
 .hint{
 
@@ -209,7 +206,7 @@ h1{
 }
 
 
-/* BOTONES */
+
 
 .controls{
 
@@ -262,7 +259,7 @@ h1{
 }
 
 
-/* STATUS */
+
 
 #status,#ranking{
 
@@ -274,7 +271,7 @@ h1{
 }
 
 
-/* MODALES */
+
 
 .modal{
 
@@ -348,7 +345,7 @@ h1{
 }
 
 
-/* CONFETI */
+
 
 #confetti{
 
@@ -362,7 +359,7 @@ h1{
 }
 
 
-/* RESPONSIVE */
+
 
 @media(max-width:650px){
 
@@ -375,7 +372,7 @@ h1{
     }
 }
 
-/* ENVOLTORIO DEL TABLERO */
+
 
 .board-wrapper{
 
@@ -388,3 +385,4 @@ h1{
 
     margin:0 auto;
 }
+
