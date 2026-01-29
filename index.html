@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Juego de Reinas</title>
+
+    <link rel="stylesheet" href="estilosin.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Juego de Reinas</h1>
+
+
+        <div class="panel">
+
+            <label>
+                Tamaño:
+                <input type="number" id="sizeInput" min="4" max="20" value="8">
+            </label>
+
+            <button id="btnSize">Cambiar</button>
+
+        </div>
+
+
+        <p id="status"></p>
+
+        <p id="ranking"></p>
+
+
+        <div class="board-wrapper">
+    <div id="board" class="board"></div>
+</div>
+
+
+
+        <div class="controls">
+
+            <button id="btnReset">Reiniciar</button>
+
+            <button id="btnHint" style="display:none;">Sugerencia</button>
+
+            <button id="btnSolve" style="display:none;">Solución</button>
+
+            <button id="btnTime">Contrarreloj</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- AUDIO -->
+    <audio id="soundWin">
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5f7d3f8bb6.mp3">
+    </audio>
+
+
+    <!-- CONFETI -->
+    <canvas id="confetti"></canvas>
+
+
+    <!-- TUTORIAL -->
+    <div id="tutorial" class="modal">
+
+        <div class="modal-box">
+
+            <h2>Instrucciones</h2>
+
+            <p>
+
+                Objetivo:<br>
+                Coloca la cantidad de reinas según el tamaño del tablero.<br>
+                Ejemplo:<br>
+                4x4 → 4 reinas<br>
+                5x5 → 5 reinas<br><br>
+
+                Cómo jugar:<br>
+                Haz clic para colocar una reina.<br>
+                Solo una por fila.<br><br>
+
+                Reglas:<br>
+                No pueden atacarse por filas, columnas ni diagonales.<br><br>
+
+                Ayuda:<br>
+                10s → sugerencia<br>
+                2min → solución<br><br>
+
+                Contrarreloj:<br>
+                Gana antes de que termine el tiempo.<br><br>
+
+                Gana para subir de nivel.
+
+            </p>
+
+            <button id="btnStart">Comenzar</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FINAL -->
+    <div id="celebracion" class="modal">
+
+        <div class="modal-box">
+
+            <h2 id="tituloFinal"></h2>
+
+            <p id="msgFinal"></p>
+
+            <div class="reinas">♕ ♕ ♕ ♕ ♕</div>
+
+            <button id="btnClose">Continuar</button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
